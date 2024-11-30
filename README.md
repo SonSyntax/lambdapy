@@ -1,4 +1,61 @@
 # lambdapy
+
+![maaf](https://github.com/user-attachments/assets/3ffd8e0b-d3f6-4e28-8772-77ed80fcf341)
+
+```Python
+import math
+
+def a(x):
+    lamb_1 = lambda x: x**2
+    return lamb_1
+
+def b(x, y):
+    lamb_2 = lambda x, y: math.sqrt(x**2 + y**2)
+    return lamb_2
+
+def c(*args):
+    lamb_3 = lambda *args: sum(args) / len(args)
+    return lamb_3
+
+def d(s):
+    lamb_4 = lambda s: "".join(set(s))
+    return lamb_4
+````
+ ```python 
+ import math
+````
+
+Baris ini mengimpor modul `math`, yang menyediakan fungsi-fungsi matematika seperti `sqrt` (akar kuadrat). 2. 
+
+**Fungsi `a(x)`**
+```python
+ def a(x): lamb_1 = lambda x: x**2 return lamb_1 
+```
+Fungsi `a` menerima satu argumen `x`. Di dalam fungsi ini, sebuah lambda (fungsi anonim) didefinisikan untuk mengkuadratkan nilai `x`. Fungsi lambda ini kemudian dikembalikan oleh fungsi `a`. 3. 
+
+**Fungsi `b(x, y)`**
+```python
+def b(x, y): lamb_2 = lambda x, y: math.sqrt(x**2 + y**2) return lamb_2 
+```
+Fungsi `b` menerima dua argumen `x` dan `y`. Di dalam fungsi ini, sebuah lambda didefinisikan untuk menghitung jarak Euclidean antara dua titik `(x, y)` menggunakan rumus akar kuadrat dari jumlah kuadrat `x` dan `y`. Fungsi lambda ini kemudian dikembalikan oleh fungsi `b`. 4. 
+
+**Fungsi `c(*args)`**
+
+```python 
+def c(*args): lamb_3 = lambda *args: sum(args) / len(args) return lamb_3
+```
+
+Fungsi `c` menerima sejumlah argumen variabel (`*args`). Di dalam fungsi ini, sebuah lambda didefinisikan untuk menghitung rata-rata dari semua argumen yang diberikan. Fungsi lambda ini kemudian dikembalikan oleh fungsi `c`. 5. 
+
+**Fungsi `d(s)`** 
+```python
+def d(s): lamb_4 = lambda s: "".join(set(s)) return lamb_4
+```
+
+ Fungsi `d` menerima satu argumen `s` yang diasumsikan sebagai string. Di dalam fungsi ini, sebuah lambda didefinisikan untuk menghilangkan karakter duplikat dalam string `s` dan menggabungkan karakter-karakter unik tersebut menjadi sebuah string baru. Fungsi lambda ini kemudian dikembalikan oleh fungsi `d`. Secara keseluruhan, kode ini mendefinisikan empat fungsi yang masing-masing mengembalikan fungsi lambda yang melakukan operasi tertentu pada argumen yang diberikan.
+ 
+## mendaftarkan nilai
+
 ```Python
 import time
 

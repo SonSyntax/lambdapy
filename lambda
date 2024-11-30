@@ -1,0 +1,17 @@
+import math
+
+def a(x):
+    lamb_1 = lambda x: x**2
+    return lamb_1
+
+def b(x, y):
+    lamb_2 = lambda x, y: math.sqrt(x**2 + y**2)
+    return lamb_2
+
+def c(*args):
+    lamb_3 = lambda *args: sum(args) / len(args)
+    return lamb_3
+
+def d(s):
+    lamb_4 = lambda s: "".join(set(s))
+    return lamb_4
